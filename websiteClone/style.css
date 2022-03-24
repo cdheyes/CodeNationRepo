@@ -6,7 +6,12 @@
 
 body {
 	box-sizing: border-box;
-	font-family: monospace;
+	font-family: "Montserrat", sans-serif;
+	font-size: 0.7em;
+}
+
+li:hover {
+	color: lime;
 }
 
 .head {
@@ -15,7 +20,7 @@ body {
 }
 
 .headLeft {
-	background-color: lightgreen;
+	background-color: black;
 	flex: 1;
 }
 
@@ -23,7 +28,9 @@ body {
 	background-color: black;
 	flex: 1;
 	justify-content: flex-start;
-	align-items: center;
+	align-content: center;
+	margin: 0;
+	padding: 7px;
 }
 
 .headmenu {
@@ -31,15 +38,19 @@ body {
 	flex: 1;
 }
 
-.headMenu li {
+.headMenu ul {
+	display: flex;
 	color: white;
 	background-color: black;
-	flex-direction: row;
+	margin: 0;
+	padding: 18px;
+	gap: 1.5rem;
 	list-style: none;
+	flex-direction: row;
 }
 
 .headRight {
-	background-color: lightgoldenrodyellow;
+	background-color: black;
 	flex: 1;
 }
 
@@ -49,29 +60,30 @@ body {
 }
 
 .mainLeft {
-	background-color: lightblue;
-	flex: 1;
-	padding: 30px;
-	padding-top: 200px;
-}
-
-.mainLeft li {
 	display: flex;
-	flex-direction: row;
-	list-style: none;
+	background-color: rgb(56, 51, 171);
+	flex: 1;
+	margin: 0;
+	padding: 0px;
+	justify-content: flex-start;
 }
 
 .mainMiddle {
+	display: flex;
 	flex: 3;
-	background-color: white;
-	padding: 15px;
+	background-color: rgb(56, 51, 171);
+	margin: 0;
+	padding: 30px;
+	justify-content: center;
 }
 
 .mainRight {
-	background-color: lightblue;
+	display: flex;
+	background-color: rgb(56, 51, 171);
 	flex: 1;
-	padding: 30px;
-	padding-top: 200px;
+	margin: 0;
+	padding: 0px;
+	justify-content: flex-end;
 }
 
 .lowerMenu {
@@ -80,21 +92,75 @@ body {
 }
 
 .lowerLeft {
-	background-color: blue;
-	flex: 1;
+	background-color: black;
+	flex: 1.5;
 	padding: 30px;
 	padding-top: 200px;
 }
 
-.lowerMiddle {
-	flex: 3;
-	background-color: gray;
+.lowerMiddleA {
+	flex: 0.5;
+	background-color: black;
+	padding: 15px;
+}
+
+.lowerMiddleB {
+	flex: 0.5;
+	background-color: black;
+	padding: 15px;
+}
+
+.lowerMiddleB ul {
+	color: white;
+	background-color: black;
+	margin: 0;
+	padding: 0px;
+	gap: 1rem;
+	list-style: none;
+	line-height: 3em;
+}
+
+.lowerMiddleC {
+	flex: 0.5;
+	background-color: black;
+	padding: 15px;
+}
+
+.lowerMiddleC ul {
+	color: white;
+	background-color: black;
+	margin: 0;
+	padding: 0px;
+	gap: 1rem;
+	list-style: none;
+	line-height: 3em;
+}
+
+.lowerMiddleD {
+	flex: 0.5;
+	background-color: black;
+	padding: 15px;
+}
+
+.lowerMiddleD ul {
+	color: white;
+	background-color: black;
+	margin: 0;
+	padding: 0px;
+	gap: 1rem;
+	list-style: none;
+	line-height: 3em;
+}
+
+.lowerMiddleE {
+	flex: 0.5;
+	background-color: black;
 	padding: 15px;
 }
 
 .lowerRight {
-	background-color: blue;
-	flex: 1;
+	background-color: black;
+	flex: 1.5;
 	padding: 30px;
 	padding-top: 200px;
 }
@@ -107,35 +173,30 @@ body {
 }
 
 .footA {
-	background-color: lightgreen;
+	background-color: Black;
 	flex: 1;
 }
 
 .footB {
-	background-color: lightsteelblue;
-	flex: 1;
+	background-color: black;
+	flex: 2;
+}
+
+.footB ul {
+	display: flex;
+	color: grey;
+	background-color: black;
+	margin: 0;
+	padding: 18px;
+	gap: 2rem;
+	list-style: none;
+	flex-direction: row;
 }
 
 .footC {
-	background-color: lightcyan;
-	flex: 1;
-}
-
-.footD {
-	background-color: lightgoldenrodyellow;
+	background-color: Black;
 	flex: 1;
 }
 
 @media (max-width: 700px) {
-	.container {
-		flex-direction: column;
-	}
-
-	.boxb {
-		display: none;
-	}
-
-	.boxc {
-		display: none;
-	}
 }

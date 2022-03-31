@@ -8,19 +8,25 @@
 		<title>Dice Game</title>
 	</head>
 	<body>
-		<header id="header">Dice Roller</header>
-		<div id="number">
-			<h2 id="numDisplay">HIT THE BUTTON TO ROLL THE DICE!</h2>
-		</div>
-		<div>
-			<h2 id="totalDisplay">GO! GO! GO!</h2>
-		</div>
+		<header id="header">
+			<img src="images/DiceRollerTitle.png" />
+		</header>
+		<p id="instructions">
+			Score over 20 to WIN! - - - - - - - Roll a 1 and you LOSE!
+		</p>
 		<div id="container">
-			<div id="boom">
+			<div id="leftside">
+				<img id="diceImage" src="images/initDice.png" />
+			</div>
+			<div id="rightside">
+				<p id="numDisplay">HIT THE BUTTON!</p>
+				<p></p>
+				<img src="images/totalImage.png" />
+				<p id="totalDisplay">0</p>
 				<button id="rollClick">ROLL</button>
-				<p id="desc">Click the button to roll the dice</p>
 			</div>
 		</div>
+		<footer></footer>
 		<script src="app.js"></script>
 	</body>
 </html>

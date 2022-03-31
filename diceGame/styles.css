@@ -1,10 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: "Poppins";
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 body {
@@ -17,60 +15,119 @@ body {
 }
 
 #header {
+	display:flex;
+	width: 800px;
+	background: rgb(255,255,255);
+	background: linear-gradient(0deg, rgba(255,255,255,1) 19%, rgba(255,251,189,1) 53%, rgba(255,162,162,1) 100%);
 	font-weight: bold;
-	font-size: 50px;
-}
-#number {
-	display: flex;
-	align-items: center;
-	height: 20%;
-}
-
-#numDisplay {
-	font-size: 30px;
-}
-
-#container {
-	height: 25%;
-	width: 100%;
-	display: flex;
+	font-size: 80px;
 	justify-content: center;
 	align-items: center;
 }
 
-#boom,
-#clap,
-#hihat,
-#kick,
-#openhat,
-#ride,
-#snare,
-#tink,
-#tom {
+#instructions {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	border: 10px;
+
+}
+
+#container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border: 3px;
+	border-color: black;
+}
+
+#leftside {
+	display: flex;
+	flex: 1;
+	height:400px;
+	width:400px;
+	padding: 20px;
+	background: url(images/woodSurface.jpg);
+	background-color: burlywood;
+	border: 1px solid black;
+}
+
+#rightside {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	height:400px;
+	width:400px;
+	padding: 40px;
+	border: 1px;
+	align-items: center;
+	justify-content: space-around;
+	background: rgb(255,255,255);
+	background: linear-gradient(180deg, rgba(255,255,255,1) 19%, rgba(255,251,189,1) 53%, rgba(255,162,162,1) 100%);
+}
+
+#diceImage {
+	display: flex;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 100%;
+}
+
+#numDisplay {
+	font-variant: small-caps;
+	font-size: 44px;
+}
+
+#totalDisplay {
+	font-variant: small-caps;
+	font-size: 60px;
+}
+
+#buttonBox {
 	flex-basis: 1;
 	flex-grow: 1;
 	height: 100%;
+	width: 25%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	box-shadow: 10px 10px 20px -17px rgba(0, 0, 0, 1);
 }
 
-#codeDisplay,
-#keyDisplay,
-#whichDisplay {
-	color: blue;
-	font-size: 50px;
-	margin-bottom: 10px;
+/* Created with online button generater */
+#rollClick {
+	padding: 10px 10px;
+	margin: 10px 10px 10px 0px;
+	width: 240px;
+  background: #ff2018;
+  border: 2px solid #8c0702;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 60px;
+  letter-spacing: 0.2rem;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
 }
 
-#desc {
-	font-size: 20px;
-	font-weight: bold;
+#rollClick:hover,
+#rollClick:active {
+  background-color: whitesmoke;
+  background-position: 0 0;
+  color: #FF4742;
 }
 
-.pressedBtn {
-	font-size: 30px;
-	color: lightseagreen;
-}

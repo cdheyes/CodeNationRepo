@@ -40,26 +40,11 @@ rollClick.addEventListener("click", (event) => {
 // switch the dice image
 function diceSwitchFace() {
     diceString = dice.toString();
-    switch (diceString) {
-    case "1": diceImage.src = `images/diceFace_1.png`;
-              break;
-    case "2": diceImage.src = `images/diceFace_2.png`;
-              break;
-    case "3": diceImage.src = `images/diceFace_3.png`;
-              break;
-    case "4": diceImage.src = `images/diceFace_4.png`;
-              break;
-    case "5": diceImage.src = `images/diceFace_5.png`;
-              break;
-    case "6": diceImage.src = `images/diceFace_6.png`;
-              break;
-    default: numDisplay.innerHTML = `this is not used`;
-  } 
-}
+    diceImage.src=`images/diceFace_${diceString}.png`;
+};
 
 function restartGame() {
 rollClick.addEventListener("click", (event) => {
   location.reload();
   });
 };
-// 

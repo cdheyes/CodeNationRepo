@@ -21,32 +21,23 @@ document.addEventListener('keydown', (event) => {
 
 // button id listeners
 boomClick.addEventListener("click", (event) => {
-  keyPressed = "1"; triggerAudio(event);
-});
+  keyPressed = "1"; triggerAudio(event);});
 clapClick.addEventListener("click", (event) => {
-  keyPressed = "2"; triggerAudio(event);
-});
+  keyPressed = "2"; triggerAudio(event);});
 hihatClick.addEventListener("click", (event) => {
-  keyPressed = "3"; triggerAudio(event);
-});
+  keyPressed = "3"; triggerAudio(event);});
 kickClick.addEventListener("click", (event) => {
-  keyPressed = "4"; triggerAudio(event);
-});
+  keyPressed = "4"; triggerAudio(event);});
 openhatClick.addEventListener("click", (event) => {
-  keyPressed = "5"; triggerAudio(event);
-});
+  keyPressed = "5"; triggerAudio(event);});
 rideClick.addEventListener("click", (event) => {
-  keyPressed = "6"; triggerAudio(event);
-});
+  keyPressed = "6"; triggerAudio(event);});
 snareClick.addEventListener("click", (event) => {
-  keyPressed = "7"; triggerAudio(event);
-});
+  keyPressed = "7"; triggerAudio(event);});
 tinkClick.addEventListener("click", (event) => {
-  keyPressed = "8"; triggerAudio(event);
-});
+  keyPressed = "8"; triggerAudio(event);});
 tomClick.addEventListener("click", (event) => {
-  keyPressed = "9"; triggerAudio(event);
-});
+  keyPressed = "9"; triggerAudio(event);});
 
 // audio trigger function
 function triggerAudio(event) {

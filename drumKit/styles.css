@@ -5,14 +5,6 @@
 	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
-html { 
-	background: url(images/drumGIF.gif) no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-  }
-
 body {
 	width: 100vw;
 	height: 100vh;
@@ -24,26 +16,28 @@ body {
 
 #header {
 	font-weight: bold;
-	font-size: 100px;
+	font-size: 86px;
 }
 #number {
 	display: flex;
-	height: 30%;
+	flex: 0.5;
 	justify-content: center;
-	align-items: flex-end;
+	align-items: centre;
 }
 
 #numDisplay {
-	font-size: 50px;
-
+	font-size: 40px;
 }
 
 #container {
-	height: 40%;
-	width: 80%;
+	background: url(images/drumKit.jpg) no-repeat center center fixed;
+	background-size: 50%;
+	flex: 10;
+	margin: 30px;
+	padding: 0;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content:center;
+	align-items:flex-end;
 }
 
 #boom,
@@ -55,22 +49,24 @@ body {
 #snare,
 #tink,
 #tom {
+	background-color: white;
+	margin: 0;
+	padding: 3px;
 	flex-basis: 1;
 	flex-grow: 1;
-	height: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content:space-around;
 	align-items: center;
 }
 
 #desc {
-	font-size: 34px;
+	font-size: 30px;
 	font-weight: bold;
 }
 
 button {
-  background: #FF4742;
+  background: #ff1b13;
   border: 2px solid darkslategrey;
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0) 1px 2px 4px;
@@ -78,7 +74,7 @@ button {
   color: white;
   cursor: pointer;
   display: inline-block;
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 800;
   line-height: 16px;
   min-height: 40px;
